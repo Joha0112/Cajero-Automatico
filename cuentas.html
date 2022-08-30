@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    
+    <main>
+        <section class="main">
+        <h1>¡Bienvenid@ al cajero automático</h1>
+        <section class="accounts">
+            <form>
+
+                Seleccione el nombre de la cuenta:
+                
+                <select id="cuenta" onchange="cuentasUsuario()">
+                                <option  value="0"></option>
+                                <option  value="200">Mali</option>
+                                <option  value="290">Gera</option>
+                                <option  value="67">Maui</option>
+                                <option  value="350">Johana</option>
+                                <option  value="1000">Alex</option>
+                </select>
+                
+                
+                    <p> Su saldo actual es de: <option>200</option>
+                                               <option>290</option>
+                                               <option>67</option>
+                                               <option>350</option>
+                                               <option>1000</option>
+
+                      <input type="text"  id="saldoActual" size="150"></p>
+                
+                
+                 <form action="" method="post">
+                
+                    <input type="text" name="deposito" placeholder="Ingrese un deposito">
+                    <button type="button"    onclick="depositarDinero()">Depositar</button>
+                      </br>
+                    </br>   
+                
+                
+                    <input type="text" name="retirar">
+                    <button type="button" onclick="retirarDinero()">Retirar</button>
+                  </form>
+                
+                
+                
+                    Su saldo actual es</br>
+                    <input type="text" name="verificar" >
+                    <button type="button"   onclick="verificarSaldo()">Verificar</button>
+                    </br>
+                    </br>
+                
+                </form>
+</body>
+</html>
